@@ -1,6 +1,9 @@
+// import mongoose
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/jokes_db", {
+// connect to mongodb in local
+const DB_NAME = "jokes_db"
+mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
